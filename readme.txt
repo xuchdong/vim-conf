@@ -14,4 +14,14 @@
     /plugin/CSApprox.vim
     /doc/CSApprox.txt
     /after/plugin/CSApprox.vim
-    /autoload/
+    /autoload/csapprox.vim
+    /autoload/csapprox
+
+5. pathogen
+    /autoload/pathogen.vim
+
+6. syntastic
+    /bundle/syntastic
+
+7. pyflakes
+    /ftplugin/python
