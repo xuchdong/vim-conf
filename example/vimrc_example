@@ -41,3 +41,5 @@ call pathogen#infect()
 
 autocmd BufNewFile *.py 0r ~/.vim/templates/python_template "设置python文件的模板
 "imap <silent> <C-D><C-D> <C-R>=strftime("%e %b %Y")<CR>
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
