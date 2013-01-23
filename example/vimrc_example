@@ -43,3 +43,8 @@ autocmd BufNewFile *.py 0r ~/.vim/templates/python_template "设置python文件�
 "imap <silent> <C-D><C-D> <C-R>=strftime("%e %b %Y")<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" 用来打开list功能，显示不可见字符
+nmap <leader>1 :set list!<CR>
+" 设置>-格式，用$结尾
+set listchars=tab:>-,eol:$
