@@ -48,3 +48,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 nmap <leader>1 :set list!<CR>
 " 设置>-格式，用$结尾
 set listchars=tab:>-,eol:$
+
+" 设置编写html, htm, css, js文件的时候tab为两个空格
+autocmd BufNewFile,BufRead *.html,*.htm,*.css,*.js set noexpandtab tabstop=2 shiftwidth=2 
