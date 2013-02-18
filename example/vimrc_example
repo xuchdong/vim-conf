@@ -23,6 +23,8 @@ set cursorline
 
 set t_Co=256
 colorscheme desert
+" 设置透明
+" hi Normal ctermbg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 "TagList (依赖ctags)
@@ -51,3 +53,13 @@ set listchars=tab:>-,eol:$
 
 " 设置编写html, htm, css, js文件的时候tab为两个空格
 autocmd BufNewFile,BufRead *.html,*.htm,*.css,*.js set noexpandtab tabstop=2 shiftwidth=2 
+
+let mapleader = ","
+let g:mapleader = ","
+
+" 设置tcommment的块注释 
+vmap gb <c-_>b
+
+cmap tl Tlist 
+cmap ct CommandT
+cmap nt NERDTree
