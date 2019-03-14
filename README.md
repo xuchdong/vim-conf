@@ -10,3 +10,9 @@ git submodule init
 git submodule update
 ln -s  ~/.vim/vimrc ~/.vimrc
 ```
+
+open `vim`, and execute：
+
+`BundleInstall`
+
+Done! Welcome to vim~
