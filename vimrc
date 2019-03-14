@@ -30,4 +30,4 @@ highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
 match RedundantSpaces /\s\+$/
 
-autocmd BufNewFile *.py 0r ~/.vim/template/py.tlp
+autocmd BufNewFile *.py 0r ~/.vim/templates/py.tlp
