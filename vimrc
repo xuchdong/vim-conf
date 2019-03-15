@@ -25,9 +25,19 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+let s:uname = system("uname -s")
+if s:uname == "Darwin\n"
+    let g:NERDTreeNodeDelimiter = "\u00a0"
+endif
+
 
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
 match RedundantSpaces /\s\+$/
 
 autocmd BufNewFile *.py 0r ~/.vim/templates/py.tlp
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
