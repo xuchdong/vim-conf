@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/scrooloose/nerdtree.git'
 Plugin 'git://github.com/Xuyuanp/nerdtree-git-plugin.git'
+Plugin 'git://github.com/ctrlpvim/ctrlp.vim.git'
 call vundle#end()
 filetype plugin indent on
 
