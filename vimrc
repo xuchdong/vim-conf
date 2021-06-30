@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/scrooloose/nerdtree.git'
 Plugin 'git://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plugin 'git://github.com/ctrlpvim/ctrlp.vim.git'
+Plugin 'git://github.com/tacahiroy/ctrlp-funky.git'
 call vundle#end()
 filetype plugin indent on
 
@@ -30,6 +31,7 @@ let s:uname = system("uname -s")
 if s:uname == "Darwin\n"
     let g:NERDTreeNodeDelimiter = "\u00a0"
 endif
+let NERDTreeIgnore=['\.meta$', '\~$']
 
 
 highlight RedundantSpaces ctermbg=red guibg=red
@@ -42,3 +44,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_matchtype = 'path'
+let g:ctrlp_funky_syntax_highlight = 1
